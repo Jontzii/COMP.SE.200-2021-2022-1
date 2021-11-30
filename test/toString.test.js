@@ -1,0 +1,10 @@
+describe('toString', () => {
+  test.todo('Should return the given string')
+  test.todo('Should return empty string when null is given')
+  test.todo('Should return empty string when undefined is given')
+  test.todo('Should return "0" when given 0')
+  test.todo('Should return "-0" when given -0')
+  test.todo('Should return given number as string')
+  test.todo('Should return array of numbers as string of numbers')
+  test.todo('Should return the value given by toString of an object')
+})
