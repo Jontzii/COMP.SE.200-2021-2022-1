@@ -5,13 +5,30 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo MORO!"
+    "test": "echo MORO!",
+    "test:coverage": "jest --coverage"
   },
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "coveralls": "^3.1.1",
     "jest": "^27.4.2",
     "jest-chain": "^1.1.5",
     "jest-html-reporter": "^3.4.1"
-  }
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testPathIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!src/.internal/**"
+    ],
+    "globals": {
+      "ts-jest": {
+          "isolatedModules": true
+      }
+    }
+}
 }
