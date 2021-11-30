@@ -1,9 +1,6 @@
 language: node_js
 node_js:
   - lts/*
-
-jobs:
-  include:
-    - stage: Produce Coverage
-      node_js: lts/*
-      script: coveralls < coverage/lcov.info
+script:
+  - npm test
+  - coveralls < coverage/lcov.info
