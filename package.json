@@ -25,9 +25,13 @@
       "src/**/*.js",
       "!src/.internal/**"
     ],
+    "coverageReporters": [
+      "lcov",
+      "text-summary"
+    ],
     "globals": {
       "ts-jest": {
-          "isolatedModules": true
+        "isolatedModules": true
       }
     }
 }
