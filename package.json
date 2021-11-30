@@ -5,13 +5,13 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo MORO!",
-    "test:coverage": "jest --coverage"
+    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest --coverage"
   },
   "author": "",
   "license": "MIT",
   "dependencies": {
     "coveralls": "^3.1.1",
+    "cross-env": "^7.0.3",
     "jest": "^27.4.2",
     "jest-chain": "^1.1.5",
     "jest-html-reporter": "^3.4.1"
