@@ -5,10 +5,13 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no tests are implemented yet \" && exit 1"
+    "test": "echo MORO!"
   },
   "author": "",
   "license": "MIT",
-  "dependencies": {},
-  "devDependencies": {}
+  "dependencies": {
+    "jest": "^27.4.2",
+    "jest-chain": "^1.1.5",
+    "jest-html-reporter": "^3.4.1"
+  }
 }
