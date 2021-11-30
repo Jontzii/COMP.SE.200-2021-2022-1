@@ -1,5 +1,9 @@
 # Student template
 
+## Status
+[![Build Status](https://app.travis-ci.com/Jontzii/COMP.SE.200-2021-2022-1.svg?branch=main)](https://app.travis-ci.com/Jontzii/COMP.SE.200-2021-2022-1)
+[![Coverage Status](https://coveralls.io/repos/github/Jontzii/COMP.SE.200-2021-2022-1/badge.svg?branch=main)](https://coveralls.io/github/Jontzii/COMP.SE.200-2021-2022-1?branch=main)
+
 ## Purpose of this repository
 
 This is a project template for students participating in Software Testing course
