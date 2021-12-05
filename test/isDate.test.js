@@ -12,4 +12,12 @@ describe('isDate', () => {
   test('Should return false when given a unix ms time', () => {
     expect(isDate(1638296020)).toEqual(false)
   })
+
+  test('Should return false when given null', () => {
+    expect(isDate(null)).toEqual(false)
+  })
+
+  test('Should return false when given undefined', () => {
+    expect(isDate(undefined)).toEqual(false)
+  })
 })

@@ -33,6 +33,10 @@ describe('toNumber', () => {
     expect(toNumber(Number.MAX_VALUE)).toEqual(1.7976931348623157E+308)
   })
 
+  test('Should return NaN when given null', () => {
+    expect(toNumber(null)).toEqual(NaN)
+  })
+
   test('Should return NaN when given undefined', () => {
     expect(toNumber(undefined)).toEqual(NaN)
   })

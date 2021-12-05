@@ -16,4 +16,12 @@ describe('isArrayLike', () => {
   test('Should return false when given a object without length', () => {
     expect(isArrayLike({ a: 'a', b: 'b' })).toEqual(false)
   })
+
+  test('Should return false when given null', () => {
+    expect(isArrayLike(null)).toEqual(false)
+  })
+
+  test('Should return false when given undefined', () => {
+    expect(isArrayLike(undefined)).toEqual(false)
+  })
 })

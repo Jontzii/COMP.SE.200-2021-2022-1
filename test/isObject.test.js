@@ -25,8 +25,12 @@ describe('isObject', () => {
     expect(isObject(new String('example'))).toEqual(true)
   })
 
-  test('Should return false whne given null', () => {
+  test('Should return false when given null', () => {
     expect(isObject(null)).toEqual(false)
+  })
+
+  test('Should return false when given undefined', () => {
+    expect(isObject(undefined)).toEqual(false)
   })
 
   test('Should return false when given number', () => {
