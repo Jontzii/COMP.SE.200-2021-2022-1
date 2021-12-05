@@ -5,23 +5,12 @@ describe('toString', () => {
     expect(toString('abc')).toEqual('abc')
   })
 
-  // This is not according to specification?
-  /*
   test('Should return empty string when null is given', () => {
     expect(toString(null)).toEqual('')
   })
 
   test('Should return empty string when undefined is given', () => {
     expect(toString(undefined)).toEqual('')
-  })
-  */
-
-  test('Should return "null" string when null is given', () => {
-    expect(toString(null)).toEqual('null')
-  })
-
-  test('Should return "undefined" string when undefined is given', () => {
-    expect(toString(undefined)).toEqual('undefined')
   })
 
   test('Should return "0" when given 0', () => {
