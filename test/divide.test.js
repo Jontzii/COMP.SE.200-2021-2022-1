@@ -5,16 +5,16 @@ describe('Divide', () => {
     expect(divide(0, 66)).toBe(0);
   });
   test('should divide correctly with integers', () => {
-    expect(divide(1, 2)).toBe(0.5);
+    expect(divide(1, 2)).toBeCloseTo(0.5, 5);
   });
   test('should divide correctly with decimals', () => {
-    expect(divide(5.5, 0.2)).toBe(10.1);
+    expect(divide(5.5, 0.2)).toBeCloseTo(10.1, 5);
   });
   test('Should work with negative divisor', () => {
-    expect(divide(4, -2)).toBe(-2);
+    expect(divide(4, -2)).toBeCloseTo(-2, 5);
   });
   test('Should work with negative dividend', () => {
-    expect(divide(-4, 2)).toBe(-2);
+    expect(divide(-4, 2)).toBeCloseTo(-2, 5);
   });
   test('should throw error when divisor is undefined', () => {
     expect(() => divide(1)).toThrowError();
