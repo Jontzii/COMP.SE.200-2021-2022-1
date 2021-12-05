@@ -8,7 +8,7 @@ describe('Divide', () => {
     expect(divide(1, 2)).toBeCloseTo(0.5, 5);
   });
   test('should divide correctly with decimals', () => {
-    expect(divide(5.5, 0.2)).toBeCloseTo(10.1, 5);
+    expect(divide(5.5, 2.5)).toBeCloseTo(2.2, 5);
   });
   test('Should work with negative divisor', () => {
     expect(divide(4, -2)).toBeCloseTo(-2, 5);
