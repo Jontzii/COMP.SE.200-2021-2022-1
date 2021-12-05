@@ -19,10 +19,4 @@ describe('Add', function () {
   test('should return augend with 0 addend', () => {
     expect(add(0, 1)).toBe(1);
   });
-  test('should throw error with undefined augend', () => {
-    expect(() => add(undefined, 1)).toThrowError();
-  });
-  test('should throw error with undefined addend', () => {
-    expect(() => add(1, undefined)).toThrowError();
-  });
 });

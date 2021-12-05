@@ -16,13 +16,4 @@ describe('Divide', () => {
   test('Should work with negative dividend', () => {
     expect(divide(-4, 2)).toBeCloseTo(-2, 5);
   });
-  test('should throw error when divisor is undefined', () => {
-    expect(() => divide(1)).toThrowError();
-  });
-  test('should throw error when dividend is undefined', () => {
-    expect(() => divide(undefined, 1)).toThrowError();
-  });
-  test('should throw error with zero divisor', () => {
-    expect(() => divide(1, 0)).toThrowError();
-  });
 });
